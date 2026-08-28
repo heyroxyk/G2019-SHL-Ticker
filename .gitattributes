@@ -7,5 +7,5 @@ data.json           text eol=lf
 archive.json        text eol=lf
 ticker.svg          text eol=lf
 ticker.template.svg text eol=lf
-preview.html        text eol=lf
+index.html          text eol=lf
 *.md                text eol=lf

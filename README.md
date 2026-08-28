@@ -27,9 +27,10 @@ python build.py     # + template      -> ticker.svg
 python -m unittest test_build -v
 ```
 
-`preview.html` embeds the result at the widths where the responsive tiers hand
-over, with a slider to watch one switch live. Serve it over HTTP, because a
-browser will not apply an SVG's media queries the same way from a `file://` path:
+`index.html` embeds the result at the widths where the responsive tiers hand
+over, with a slider to watch one switch live. It is also what the Pages site
+serves at its root. Serve it over HTTP locally, because a browser will not apply
+an SVG's media queries the same way from a `file://` path:
 
 ```bash
 python -m http.server 8731
@@ -103,9 +104,17 @@ clamp and filling the canvas.
 
 ## Embedding it
 
+The signature points at the **file**, not the site root:
+
+    https://heyroxyk.github.io/G2019-SHL-Ticker/ticker.svg
+
 Serve it from GitHub Pages, not `raw.githubusercontent.com`: raw serves SVG as
 `text/plain`, so an image tag pointing there renders nothing. Pages sends the
 correct `image/svg+xml`.
+
+`.nojekyll` is deliberate. Without it Pages runs the repo through Jekyll, which
+renders README.md as the site root and can transform files it was never asked
+to touch. This repo serves static assets and wants none of that.
 
 ## Pointing it at someone else
 
@@ -123,7 +132,7 @@ Everything else is derived.
 | `build.py` | renders and validates → `ticker.svg` |
 | `metrics.py` | measured Verdana advance widths |
 | `ticker.template.svg` | colour, type and the shape of the animation |
-| `preview.html` | responsive tier check |
+| `index.html` | responsive tier check, and the Pages landing page |
 | `data.json` | nightly: active players, awards, drafts, their clubs |
 | `archive.json` | append-only: frozen careers and their clubs |
 | `ticker.svg` | the committed output, what the forum embeds |
