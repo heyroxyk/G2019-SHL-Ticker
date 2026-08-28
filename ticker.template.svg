@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 620 60" width="620" height="60" role="img"
+     aria-label="{{ARIA_LABEL}}">
+  <title>{{ARIA_LABEL}}</title>
+
+  <!--
+    Geometry is not authored here. Every position on this canvas falls out of
+    the type clamp in build.py: text may never render smaller than 11px or
+    larger than 14px, and that plus the row count fixes the font size, the
+    leading, the nameplate band and the canvas height together. Hand-placing
+    anything here would just go stale the first time a stat line grows.
+
+    What does live here: colour, type face, and the shape of the animation.
+  -->
+
+  <style>
+    text { font-family: Verdana, Geneva, sans-serif; font-weight: bold; }
+    .bg    { fill: #15181d; }
+    .band  { fill: #1e232b; }
+    .rule  { fill: #c2ad6e; }
+    .stat  { fill: #e8e8e8; }
+    .lbl   { fill: #8a8a8a; }
+    .muted { fill: #6c727c; }
+    .plate { fill: #e8e8e8; }
+    /* The only colour-coded thing on the ticker is the club name. */
+    .club  { fill: #c2ad6e; }
+
+    .strip { animation: rollA {{LOOP_A}}s linear infinite; }
+    .plates g { opacity: 0; }
+    @keyframes rollA { from { transform: translateX(0); }
+                       to   { transform: translateX(-{{WIDTH_A}}px); } }
+    @keyframes rollB { from { transform: translateX(0); }
+                       to   { transform: translateX(-{{WIDTH_B}}px); } }
+
+    /* Tier A is the default. Tier B takes over where tier A's type would fall
+       below the 11px floor. An SVG loaded as an image evaluates this against the
+       width it is actually rendered at, and re-evaluates on resize. */
+    .tierB { display: none; }
+    @media (max-width: {{TIER_B_MAX}}px) {
+      .tierA { display: none; }
+      .tierB { display: block; }
+      .strip { animation-name: rollB; animation-duration: {{LOOP_B}}s; }
+    }
+
+{{PLATE_KEYFRAMES}}
+    /* A ticker that cannot be stopped is unusable for anyone who needs it
+       still. Pin the strip and cross-fade the cards in place instead, on the
+       same schedule, so nothing becomes unreachable. */
+    @media (prefers-reduced-motion: reduce) {
+      .strip     { animation-timing-function: steps({{ITEM_COUNT}}); }
+      .plates g  { animation-timing-function: steps(1); }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="window"><rect x="0" y="0" width="620" height="60"/></clipPath>
+{{STRIP_DEFS}}
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="620" height="60"/>
+
+  <g class="tierA">
+{{TIER_A}}
+  </g>
+  <g class="tierB">
+{{TIER_B}}
+  </g>
+</svg>

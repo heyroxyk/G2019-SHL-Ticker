@@ -1,0 +1,299 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 620 60" width="620" height="60" role="img"
+     aria-label="Career ticker for G2019: Five-Hole Sieve, Sconnie McHits, Sconnie McHits Jr.">
+  <title>Career ticker for G2019: Five-Hole Sieve, Sconnie McHits, Sconnie McHits Jr.</title>
+
+  <!--
+    Geometry is not authored here. Every position on this canvas falls out of
+    the type clamp in build.py: text may never render smaller than 11px or
+    larger than 14px, and that plus the row count fixes the font size, the
+    leading, the nameplate band and the canvas height together. Hand-placing
+    anything here would just go stale the first time a stat line grows.
+
+    What does live here: colour, type face, and the shape of the animation.
+  -->
+
+  <style>
+    text { font-family: Verdana, Geneva, sans-serif; font-weight: bold; }
+    .bg    { fill: #15181d; }
+    .band  { fill: #1e232b; }
+    .rule  { fill: #c2ad6e; }
+    .stat  { fill: #e8e8e8; }
+    .lbl   { fill: #8a8a8a; }
+    .muted { fill: #6c727c; }
+    .plate { fill: #e8e8e8; }
+    /* The only colour-coded thing on the ticker is the club name. */
+    .club  { fill: #c2ad6e; }
+
+    .strip { animation: rollA 172.52s linear infinite; }
+    .plates g { opacity: 0; }
+    @keyframes rollA { from { transform: translateX(0); }
+                       to   { transform: translateX(-17252.2px); } }
+    @keyframes rollB { from { transform: translateX(0); }
+                       to   { transform: translateX(-17252.2px); } }
+
+    /* Tier A is the default. Tier B takes over where tier A's type would fall
+       below the 11px floor. An SVG loaded as an image evaluates this against the
+       width it is actually rendered at, and re-evaluates on resize. */
+    .tierB { display: none; }
+    @media (max-width: 486px) {
+      .tierA { display: none; }
+      .tierB { display: block; }
+      .strip { animation-name: rollB; animation-duration: 172.52s; }
+    }
+
+    :root { --loop: 172.52s; }
+    @keyframes plateA1 { 0.2308%,3.6154%{opacity:1} 3.8462%,100%{opacity:0} }
+    .tierA .p1 { animation: plateA1 var(--loop) linear infinite; }
+    @keyframes plateA2 { 0%,3.8462%{opacity:0} 4.0769%,7.4615%{opacity:1} 7.6923%,100%{opacity:0} }
+    .tierA .p2 { animation: plateA2 var(--loop) linear infinite; }
+    @keyframes plateA3 { 0%,7.6923%{opacity:0} 7.9231%,11.3077%{opacity:1} 11.5385%,100%{opacity:0} }
+    .tierA .p3 { animation: plateA3 var(--loop) linear infinite; }
+    @keyframes plateA4 { 0%,11.5385%{opacity:0} 11.7692%,15.1538%{opacity:1} 15.3846%,100%{opacity:0} }
+    .tierA .p4 { animation: plateA4 var(--loop) linear infinite; }
+    @keyframes plateA5 { 0%,15.3846%{opacity:0} 15.6154%,19.0000%{opacity:1} 19.2308%,100%{opacity:0} }
+    .tierA .p5 { animation: plateA5 var(--loop) linear infinite; }
+    @keyframes plateA6 { 0%,19.2308%{opacity:0} 19.4615%,22.8462%{opacity:1} 23.0769%,100%{opacity:0} }
+    .tierA .p6 { animation: plateA6 var(--loop) linear infinite; }
+    @keyframes plateA7 { 0%,23.0769%{opacity:0} 23.3077%,26.6923%{opacity:1} 26.9231%,100%{opacity:0} }
+    .tierA .p7 { animation: plateA7 var(--loop) linear infinite; }
+    @keyframes plateA8 { 0%,26.9231%{opacity:0} 27.1538%,30.5385%{opacity:1} 30.7692%,100%{opacity:0} }
+    .tierA .p8 { animation: plateA8 var(--loop) linear infinite; }
+    @keyframes plateA9 { 0%,30.7692%{opacity:0} 31.0000%,34.3846%{opacity:1} 34.6154%,100%{opacity:0} }
+    .tierA .p9 { animation: plateA9 var(--loop) linear infinite; }
+    @keyframes plateA10 { 0%,34.6154%{opacity:0} 34.8462%,38.2308%{opacity:1} 38.4615%,100%{opacity:0} }
+    .tierA .p10 { animation: plateA10 var(--loop) linear infinite; }
+    @keyframes plateA11 { 0%,38.4615%{opacity:0} 38.6923%,42.0769%{opacity:1} 42.3077%,100%{opacity:0} }
+    .tierA .p11 { animation: plateA11 var(--loop) linear infinite; }
+    @keyframes plateA12 { 0%,42.3077%{opacity:0} 42.5385%,45.9231%{opacity:1} 46.1538%,100%{opacity:0} }
+    .tierA .p12 { animation: plateA12 var(--loop) linear infinite; }
+    @keyframes plateA13 { 0%,46.1538%{opacity:0} 46.3846%,49.7692%{opacity:1} 50.0000%,100%{opacity:0} }
+    .tierA .p13 { animation: plateA13 var(--loop) linear infinite; }
+    @keyframes plateA14 { 0%,50.0000%{opacity:0} 50.2308%,53.6154%{opacity:1} 53.8462%,100%{opacity:0} }
+    .tierA .p14 { animation: plateA14 var(--loop) linear infinite; }
+    @keyframes plateA15 { 0%,53.8462%{opacity:0} 54.0769%,57.4615%{opacity:1} 57.6923%,100%{opacity:0} }
+    .tierA .p15 { animation: plateA15 var(--loop) linear infinite; }
+    @keyframes plateA16 { 0%,57.6923%{opacity:0} 57.9231%,61.3077%{opacity:1} 61.5385%,100%{opacity:0} }
+    .tierA .p16 { animation: plateA16 var(--loop) linear infinite; }
+    @keyframes plateA17 { 0%,61.5385%{opacity:0} 61.7692%,65.1538%{opacity:1} 65.3846%,100%{opacity:0} }
+    .tierA .p17 { animation: plateA17 var(--loop) linear infinite; }
+    @keyframes plateA18 { 0%,65.3846%{opacity:0} 65.6154%,69.0000%{opacity:1} 69.2308%,100%{opacity:0} }
+    .tierA .p18 { animation: plateA18 var(--loop) linear infinite; }
+    @keyframes plateA19 { 0%,69.2308%{opacity:0} 69.4615%,72.8462%{opacity:1} 73.0769%,100%{opacity:0} }
+    .tierA .p19 { animation: plateA19 var(--loop) linear infinite; }
+    @keyframes plateA20 { 0%,73.0769%{opacity:0} 73.3077%,76.6923%{opacity:1} 76.9231%,100%{opacity:0} }
+    .tierA .p20 { animation: plateA20 var(--loop) linear infinite; }
+    @keyframes plateA21 { 0%,76.9231%{opacity:0} 77.1538%,80.5385%{opacity:1} 80.7692%,100%{opacity:0} }
+    .tierA .p21 { animation: plateA21 var(--loop) linear infinite; }
+    @keyframes plateA22 { 0%,80.7692%{opacity:0} 81.0000%,84.3846%{opacity:1} 84.6154%,100%{opacity:0} }
+    .tierA .p22 { animation: plateA22 var(--loop) linear infinite; }
+    @keyframes plateA23 { 0%,84.6154%{opacity:0} 84.8462%,88.2308%{opacity:1} 88.4615%,100%{opacity:0} }
+    .tierA .p23 { animation: plateA23 var(--loop) linear infinite; }
+    @keyframes plateA24 { 0%,88.4615%{opacity:0} 88.6923%,92.0769%{opacity:1} 92.3077%,100%{opacity:0} }
+    .tierA .p24 { animation: plateA24 var(--loop) linear infinite; }
+    @keyframes plateA25 { 0%,92.3077%{opacity:0} 92.5385%,95.9231%{opacity:1} 96.1538%,100%{opacity:0} }
+    .tierA .p25 { animation: plateA25 var(--loop) linear infinite; }
+    @keyframes plateA26 { 0%,96.1538%{opacity:0} 96.3846%,99.7692%{opacity:1} }
+    .tierA .p26 { animation: plateA26 var(--loop) linear infinite; }
+    @keyframes plateB1 { 0.2308%,3.6154%{opacity:1} 3.8462%,100%{opacity:0} }
+    .tierB .p1 { animation: plateB1 var(--loop) linear infinite; }
+    @keyframes plateB2 { 0%,3.8462%{opacity:0} 4.0769%,7.4615%{opacity:1} 7.6923%,100%{opacity:0} }
+    .tierB .p2 { animation: plateB2 var(--loop) linear infinite; }
+    @keyframes plateB3 { 0%,7.6923%{opacity:0} 7.9231%,11.3077%{opacity:1} 11.5385%,100%{opacity:0} }
+    .tierB .p3 { animation: plateB3 var(--loop) linear infinite; }
+    @keyframes plateB4 { 0%,11.5385%{opacity:0} 11.7692%,15.1538%{opacity:1} 15.3846%,100%{opacity:0} }
+    .tierB .p4 { animation: plateB4 var(--loop) linear infinite; }
+    @keyframes plateB5 { 0%,15.3846%{opacity:0} 15.6154%,19.0000%{opacity:1} 19.2308%,100%{opacity:0} }
+    .tierB .p5 { animation: plateB5 var(--loop) linear infinite; }
+    @keyframes plateB6 { 0%,19.2308%{opacity:0} 19.4615%,22.8462%{opacity:1} 23.0769%,100%{opacity:0} }
+    .tierB .p6 { animation: plateB6 var(--loop) linear infinite; }
+    @keyframes plateB7 { 0%,23.0769%{opacity:0} 23.3077%,26.6923%{opacity:1} 26.9231%,100%{opacity:0} }
+    .tierB .p7 { animation: plateB7 var(--loop) linear infinite; }
+    @keyframes plateB8 { 0%,26.9231%{opacity:0} 27.1538%,30.5385%{opacity:1} 30.7692%,100%{opacity:0} }
+    .tierB .p8 { animation: plateB8 var(--loop) linear infinite; }
+    @keyframes plateB9 { 0%,30.7692%{opacity:0} 31.0000%,34.3846%{opacity:1} 34.6154%,100%{opacity:0} }
+    .tierB .p9 { animation: plateB9 var(--loop) linear infinite; }
+    @keyframes plateB10 { 0%,34.6154%{opacity:0} 34.8462%,38.2308%{opacity:1} 38.4615%,100%{opacity:0} }
+    .tierB .p10 { animation: plateB10 var(--loop) linear infinite; }
+    @keyframes plateB11 { 0%,38.4615%{opacity:0} 38.6923%,42.0769%{opacity:1} 42.3077%,100%{opacity:0} }
+    .tierB .p11 { animation: plateB11 var(--loop) linear infinite; }
+    @keyframes plateB12 { 0%,42.3077%{opacity:0} 42.5385%,45.9231%{opacity:1} 46.1538%,100%{opacity:0} }
+    .tierB .p12 { animation: plateB12 var(--loop) linear infinite; }
+    @keyframes plateB13 { 0%,46.1538%{opacity:0} 46.3846%,49.7692%{opacity:1} 50.0000%,100%{opacity:0} }
+    .tierB .p13 { animation: plateB13 var(--loop) linear infinite; }
+    @keyframes plateB14 { 0%,50.0000%{opacity:0} 50.2308%,53.6154%{opacity:1} 53.8462%,100%{opacity:0} }
+    .tierB .p14 { animation: plateB14 var(--loop) linear infinite; }
+    @keyframes plateB15 { 0%,53.8462%{opacity:0} 54.0769%,57.4615%{opacity:1} 57.6923%,100%{opacity:0} }
+    .tierB .p15 { animation: plateB15 var(--loop) linear infinite; }
+    @keyframes plateB16 { 0%,57.6923%{opacity:0} 57.9231%,61.3077%{opacity:1} 61.5385%,100%{opacity:0} }
+    .tierB .p16 { animation: plateB16 var(--loop) linear infinite; }
+    @keyframes plateB17 { 0%,61.5385%{opacity:0} 61.7692%,65.1538%{opacity:1} 65.3846%,100%{opacity:0} }
+    .tierB .p17 { animation: plateB17 var(--loop) linear infinite; }
+    @keyframes plateB18 { 0%,65.3846%{opacity:0} 65.6154%,69.0000%{opacity:1} 69.2308%,100%{opacity:0} }
+    .tierB .p18 { animation: plateB18 var(--loop) linear infinite; }
+    @keyframes plateB19 { 0%,69.2308%{opacity:0} 69.4615%,72.8462%{opacity:1} 73.0769%,100%{opacity:0} }
+    .tierB .p19 { animation: plateB19 var(--loop) linear infinite; }
+    @keyframes plateB20 { 0%,73.0769%{opacity:0} 73.3077%,76.6923%{opacity:1} 76.9231%,100%{opacity:0} }
+    .tierB .p20 { animation: plateB20 var(--loop) linear infinite; }
+    @keyframes plateB21 { 0%,76.9231%{opacity:0} 77.1538%,80.5385%{opacity:1} 80.7692%,100%{opacity:0} }
+    .tierB .p21 { animation: plateB21 var(--loop) linear infinite; }
+    @keyframes plateB22 { 0%,80.7692%{opacity:0} 81.0000%,84.3846%{opacity:1} 84.6154%,100%{opacity:0} }
+    .tierB .p22 { animation: plateB22 var(--loop) linear infinite; }
+    @keyframes plateB23 { 0%,84.6154%{opacity:0} 84.8462%,88.2308%{opacity:1} 88.4615%,100%{opacity:0} }
+    .tierB .p23 { animation: plateB23 var(--loop) linear infinite; }
+    @keyframes plateB24 { 0%,88.4615%{opacity:0} 88.6923%,92.0769%{opacity:1} 92.3077%,100%{opacity:0} }
+    .tierB .p24 { animation: plateB24 var(--loop) linear infinite; }
+    @keyframes plateB25 { 0%,92.3077%{opacity:0} 92.5385%,95.9231%{opacity:1} 96.1538%,100%{opacity:0} }
+    .tierB .p25 { animation: plateB25 var(--loop) linear infinite; }
+    @keyframes plateB26 { 0%,96.1538%{opacity:0} 96.3846%,99.7692%{opacity:1} }
+    .tierB .p26 { animation: plateB26 var(--loop) linear infinite; }
+    /* A ticker that cannot be stopped is unusable for anyone who needs it
+       still. Pin the strip and cross-fade the cards in place instead, on the
+       same schedule, so nothing becomes unreachable. */
+    @media (prefers-reduced-motion: reduce) {
+      .strip     { animation-timing-function: steps(26); }
+      .plates g  { animation-timing-function: steps(1); }
+    }
+  </style>
+
+  <defs>
+    <clipPath id="window"><rect x="0" y="0" width="620" height="60"/></clipPath>
+    <clipPath id="clipA"><rect x="0" y="20.00" width="620" height="40.00"/></clipPath>
+    <g id="stripA">
+      <g class="card"><text class="stat" x="343.8" y="35.0" font-size="14.00">REGULAR   132GP   30-45-75   -48   63PIM   106HIT</text><text class="stat" x="343.8" y="55.0" font-size="14.00">PLAYOFFS   12GP   4-4-8   -5   4PIM   12HIT</text></g>
+      <g class="card"><text class="stat" x="1007.3" y="35.0" font-size="14.00">REGULAR   132GP   71-65-136   +33   30PIM   142HIT</text><text class="stat" x="1007.3" y="55.0" font-size="14.00">PLAYOFFS   26GP   18-20-38   +15   6PIM   27HIT</text></g>
+      <g class="card"><text class="stat" x="1670.9" y="35.0" font-size="14.00">REGULAR   264GP   101-110-211   -15   93PIM   248HIT</text><text class="stat" x="1670.9" y="55.0" font-size="14.00">PLAYOFFS   38GP   22-24-46   +10   10PIM   39HIT</text></g>
+      <g class="card"><text class="stat" x="2334.4" y="35.0" font-size="14.00">REGULAR   66GP   13-29-42   +21   25PIM   51HIT</text><text class="stat" x="2334.4" y="55.0" font-size="14.00">PLAYOFFS   6GP   0-1-1   +1   2PIM   2HIT</text></g>
+      <g class="card"><text class="stat" x="2998.0" y="35.0" font-size="14.00">REGULAR   462GP   232-380-612   +157   258PIM   835HIT</text><text class="stat" x="2998.0" y="55.0" font-size="14.00">PLAYOFFS   65GP   36-39-75   +22   14PIM   97HIT</text></g>
+      <g class="card"><text class="stat" x="3661.5" y="35.0" font-size="14.00">REGULAR   528GP   245-409-654   +178   283PIM   886HIT</text><text class="stat" x="3661.5" y="55.0" font-size="14.00">PLAYOFFS   71GP   36-40-76   +23   16PIM   99HIT</text></g>
+      <g class="card"><text class="stat" x="4325.1" y="35.0" font-size="14.00">IIHF   7 SELECTIONS   FIN   ·   GOLD, SILVER, BRONZE</text><text class="stat" x="4325.1" y="55.0" font-size="14.00">WJC   5 SELECTIONS   FIN NA SWE   ·   GOLD</text></g>
+      <g class="card"><text class="stat" x="4988.6" y="35.0" font-size="14.00">3RD ALL STAR TEAM</text></g>
+      <g class="card"><text class="muted" x="5652.1" y="35.0" font-size="14.00">NOMINATED · AIDAN RICHAN</text></g>
+      <g class="card"><text class="stat" x="6315.7" y="35.0" font-size="14.00">ROOKIE ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="6979.2" y="35.0" font-size="14.00">1ST ALL STAR TEAM, IDEEN FALLAH, ROBERTO MARTUCCI, RONAN O'KEEFE</text><text class="muted" x="6979.2" y="55.0" font-size="14.00">NOMINATED · BRODIE WITZEL</text></g>
+      <g class="card"><text class="stat" x="7642.8" y="35.0" font-size="14.00">REGULAR   202GP   69-117-9   .894 SV%   3.99 GAA   4SO</text><text class="stat" x="7642.8" y="55.0" font-size="14.00">PLAYOFFS   6GP   2-3-1   .891 SV%   4.51 GAA   0SO</text></g>
+      <g class="card"><text class="stat" x="8306.3" y="35.0" font-size="14.00">REGULAR   72GP   39-23-7   .909 SV%   3.32 GAA   4SO</text><text class="stat" x="8306.3" y="55.0" font-size="14.00">PLAYOFFS   14GP   6-3-2   .903 SV%   3.75 GAA   0SO</text></g>
+      <g class="card"><text class="stat" x="8969.9" y="35.0" font-size="14.00">REGULAR   338GP   190-117-22   .894 SV%   3.56 GAA   16SO</text><text class="stat" x="8969.9" y="55.0" font-size="14.00">PLAYOFFS   73GP   35-25-10   .893 SV%   3.65 GAA   2SO</text></g>
+      <g class="card"><text class="stat" x="9633.4" y="35.0" font-size="14.00">REGULAR   25GP   2-11-0   .864 SV%   5.43 GAA   1SO</text><text class="muted" x="9633.4" y="55.0" font-size="14.00">NO PLAYOFF GAMES</text></g>
+      <g class="card"><text class="stat" x="10297.0" y="35.0" font-size="14.00">REGULAR   435GP   231-151-29   .895 SV%   3.59 GAA   21SO</text><text class="stat" x="10297.0" y="55.0" font-size="14.00">PLAYOFFS   87GP   41-28-12   .895 SV%   3.67 GAA   2SO</text></g>
+      <g class="card"><text class="stat" x="10960.5" y="35.0" font-size="14.00">IIHF   12 SELECTIONS   CZH</text><text class="stat" x="10960.5" y="55.0" font-size="14.00">WJC   4 SELECTIONS   CZE ICE WOR   ·   SILVER</text></g>
+      <g class="card"><text class="stat" x="11624.1" y="35.0" font-size="14.00">1ST ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="12287.6" y="35.0" font-size="14.00">2ND ALL STAR TEAM</text><text class="muted" x="12287.6" y="55.0" font-size="14.00">NOMINATED · JOHN MCBRIDE</text></g>
+      <g class="card"><text class="stat" x="12951.2" y="35.0" font-size="14.00">2ND ALL STAR TEAM</text><text class="muted" x="12951.2" y="55.0" font-size="14.00">NOMINATED · JOHN MCBRIDE</text></g>
+      <g class="card"><text class="stat" x="13614.7" y="35.0" font-size="14.00">ROOKIE ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="14278.3" y="35.0" font-size="14.00">REGULAR   17GP   1-4-5   -18   4PIM   34HIT</text><text class="stat" x="14278.3" y="55.0" font-size="14.00">PLAYOFFS   4GP   0-0-0   -9   4PIM   10HIT</text></g>
+      <g class="card"><text class="stat" x="14941.8" y="35.0" font-size="14.00">REGULAR   264GP   63-143-206   +123   154PIM   676HIT</text><text class="stat" x="14941.8" y="55.0" font-size="14.00">PLAYOFFS   55GP   9-36-45   +20   26PIM   125HIT</text></g>
+      <g class="card"><text class="stat" x="15605.3" y="35.0" font-size="14.00">REGULAR   281GP   64-147-211   +105   158PIM   710HIT</text><text class="stat" x="15605.3" y="55.0" font-size="14.00">PLAYOFFS   59GP   9-36-45   +11   30PIM   135HIT</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="35.0" font-size="14.00">WJC   4 SELECTIONS   CZE RHI WOR</text></g>
+      <g class="card"><text class="muted" x="16932.4" y="35.0" font-size="14.00">NOMINATED · QUILHA AGANTE</text></g>
+    </g>
+    <clipPath id="clipB"><rect x="0" y="30.00" width="620" height="30.00"/></clipPath>
+    <g id="stripB">
+      <g class="card"><text class="stat" x="343.8" y="52.5" font-size="21.00">132GP  30-45-75  -48  ·  PO 12GP 8P</text></g>
+      <g class="card"><text class="stat" x="1007.3" y="52.5" font-size="21.00">132GP  71-65-136  +33  ·  PO 26GP 38P</text></g>
+      <g class="card"><text class="stat" x="1670.9" y="52.5" font-size="21.00">264GP  101-110-211  -15  ·  PO 38GP 46P</text></g>
+      <g class="card"><text class="stat" x="2334.4" y="52.5" font-size="21.00">66GP  13-29-42  +21  ·  PO 6GP 1P</text></g>
+      <g class="card"><text class="stat" x="2998.0" y="52.5" font-size="21.00">462GP  232-380-612  +157  ·  PO 65GP 75P</text></g>
+      <g class="card"><text class="stat" x="3661.5" y="52.5" font-size="21.00">528GP  245-409-654  +178  ·  PO 71GP 76P</text></g>
+      <g class="card"><text class="stat" x="4325.1" y="52.5" font-size="21.00">IIHF 7   ·   WJC 5</text></g>
+      <g class="card"><text class="stat" x="4988.6" y="52.5" font-size="21.00">3RD ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="5652.1" y="52.5" font-size="21.00">AIDAN RICHAN (NOM)</text></g>
+      <g class="card"><text class="stat" x="6315.7" y="52.5" font-size="21.00">ROOKIE ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="6979.2" y="52.5" font-size="21.00">1ST ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="7642.8" y="52.5" font-size="21.00">202GP  .894 SV%  3.99 GAA  ·  PO 6GP</text></g>
+      <g class="card"><text class="stat" x="8306.3" y="52.5" font-size="21.00">72GP  .909 SV%  3.32 GAA  ·  PO 14GP</text></g>
+      <g class="card"><text class="stat" x="8969.9" y="52.5" font-size="21.00">338GP  .894 SV%  3.56 GAA  ·  PO 73GP</text></g>
+      <g class="card"><text class="stat" x="9633.4" y="52.5" font-size="21.00">25GP  .864 SV%  5.43 GAA</text></g>
+      <g class="card"><text class="stat" x="10297.0" y="52.5" font-size="21.00">435GP  .895 SV%  3.59 GAA  ·  PO 87GP</text></g>
+      <g class="card"><text class="stat" x="10960.5" y="52.5" font-size="21.00">IIHF 12   ·   WJC 4</text></g>
+      <g class="card"><text class="stat" x="11624.1" y="52.5" font-size="21.00">1ST ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="12287.6" y="52.5" font-size="21.00">2ND ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="12951.2" y="52.5" font-size="21.00">2ND ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="13614.7" y="52.5" font-size="21.00">ROOKIE ALL STAR TEAM</text></g>
+      <g class="card"><text class="stat" x="14278.3" y="52.5" font-size="21.00">17GP  1-4-5  -18  ·  PO 4GP 0P</text></g>
+      <g class="card"><text class="stat" x="14941.8" y="52.5" font-size="21.00">264GP  63-143-206  +123  ·  PO 55GP 45P</text></g>
+      <g class="card"><text class="stat" x="15605.3" y="52.5" font-size="21.00">281GP  64-147-211  +105  ·  PO 59GP 45P</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="52.5" font-size="21.00">WJC 4</text></g>
+      <g class="card"><text class="stat" x="16932.4" y="52.5" font-size="21.00">QUILHA AGANTE (NOM)</text></g>
+    </g>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="620" height="60"/>
+
+  <g class="tierA">
+    <g clip-path="url(#clipA)">
+      <g class="strip">
+        <use xlink:href="#stripA" href="#stripA" x="0"/>
+        <use xlink:href="#stripA" href="#stripA" x="17252.2"/>
+      </g>
+    </g>
+    <rect class="band" x="0" y="0" width="620" height="20.00"/>
+    <rect class="rule" x="0" y="20.00" width="620" height="1.2"/>
+    <g class="plates">
+      <g class="p1"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · <tspan fill="#fb4b56">ANAHEIM OUTLAWS</tspan> · S61-S62</text></g>
+      <g class="p2"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · <tspan fill="#e55d63">DETROIT FALCONS</tspan> · S63-S64</text></g>
+      <g class="p3"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · SMJHL CAREER</text></g>
+      <g class="p4"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · <tspan fill="#c5942c">SEATTLE ARGONAUTS</tspan> · S65</text></g>
+      <g class="p5"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · <tspan fill="#ffb612">MONTREAL PATRIOTES</tspan> · S66-S72</text></g>
+      <g class="p6"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · RW · SHL CAREER</text></g>
+      <g class="p7"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · INTERNATIONAL</text></g>
+      <g class="p8"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · S72 SHL</text></g>
+      <g class="p9"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · S66 SHL</text></g>
+      <g class="p10"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · S65 SHL</text></g>
+      <g class="p11"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS · S64 SMJHL</text></g>
+      <g class="p12"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · G · <tspan fill="#e5d478">KELOWNA KNIGHTS</tspan> · S72-S75</text></g>
+      <g class="p13"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · G · <tspan fill="#f6bf11">BUFFALO STAMPEDE</tspan> · S76-S77</text></g>
+      <g class="p14"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · G · <tspan fill="#00a143">NEW ENGLAND WOLFPACK</tspan> · S78-S84</text></g>
+      <g class="p15"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · G · <tspan fill="#2ef9b4">WINNIPEG AURORA</tspan> · S85</text></g>
+      <g class="p16"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · G · SHL CAREER</text></g>
+      <g class="p17"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · INTERNATIONAL</text></g>
+      <g class="p18"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · S83 SHL</text></g>
+      <g class="p19"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · S78 SHL</text></g>
+      <g class="p20"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · S77 SHL</text></g>
+      <g class="p21"><text class="plate" x="12.0" y="14.4" font-size="14.00">FIVE-HOLE SIEVE · S76 SHL</text></g>
+      <g class="p22"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · <tspan fill="#fbbc19">THUNDER BAY WALLEYE</tspan> · S85</text></g>
+      <g class="p23"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · <tspan fill="#c2ad6e">NEVADA BATTLEBORN</tspan> · S86-S89</text></g>
+      <g class="p24"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · SMJHL CAREER</text></g>
+      <g class="p25"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · INTERNATIONAL</text></g>
+      <g class="p26"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · S88 SMJHL</text></g>
+    </g>
+  </g>
+  <g class="tierB">
+    <g clip-path="url(#clipB)">
+      <g class="strip">
+        <use xlink:href="#stripB" href="#stripB" x="0"/>
+        <use xlink:href="#stripB" href="#stripB" x="17252.2"/>
+      </g>
+    </g>
+    <rect class="band" x="0" y="0" width="620" height="30.00"/>
+    <rect class="rule" x="0" y="30.00" width="620" height="1.2"/>
+    <g class="plates">
+      <g class="p1"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · <tspan fill="#fb4b56">ANA</tspan></text></g>
+      <g class="p2"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · <tspan fill="#e55d63">DET</tspan></text></g>
+      <g class="p3"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · SMJHL CAREER</text></g>
+      <g class="p4"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · <tspan fill="#c5942c">SEA</tspan></text></g>
+      <g class="p5"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · <tspan fill="#ffb612">MTL</tspan></text></g>
+      <g class="p6"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · SHL CAREER</text></g>
+      <g class="p7"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · INTL</text></g>
+      <g class="p8"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · S72</text></g>
+      <g class="p9"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · S66</text></g>
+      <g class="p10"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · S65</text></g>
+      <g class="p11"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS · S64</text></g>
+      <g class="p12"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · <tspan fill="#e5d478">KEL</tspan></text></g>
+      <g class="p13"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · <tspan fill="#f6bf11">BUF</tspan></text></g>
+      <g class="p14"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · <tspan fill="#00a143">NEW</tspan></text></g>
+      <g class="p15"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · <tspan fill="#2ef9b4">WPG</tspan></text></g>
+      <g class="p16"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · SHL CAREER</text></g>
+      <g class="p17"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · INTL</text></g>
+      <g class="p18"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · S83</text></g>
+      <g class="p19"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · S78</text></g>
+      <g class="p20"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · S77</text></g>
+      <g class="p21"><text class="plate" x="12.0" y="21.6" font-size="21.00">FIVE-HOLE SIEVE · S76</text></g>
+      <g class="p22"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · <tspan fill="#fbbc19">TBW</tspan></text></g>
+      <g class="p23"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · <tspan fill="#c2ad6e">NBB</tspan></text></g>
+      <g class="p24"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · SMJHL CAREER</text></g>
+      <g class="p25"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · INTL</text></g>
+      <g class="p26"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · S88</text></g>
+    </g>
+  </g>
+</svg>

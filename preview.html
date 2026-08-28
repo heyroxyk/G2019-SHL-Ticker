@@ -1,0 +1,57 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Ticker preview</title>
+<!--
+  Embeds ticker.svg the way a forum signature does, at the widths where the
+  responsive tiers hand over. Drag the slider to watch a tier switch live.
+
+  Open it over HTTP, not as a file:// path: a browser will not apply an SVG's
+  own media queries the same way from the local filesystem.
+      python -m http.server 8731
+      http://127.0.0.1:8731/preview.html
+-->
+<style>
+  body { background: #f4f4f5; color: #222; font: 13px ui-monospace, monospace;
+         margin: 0; padding: 16px 20px; }
+  h1 { font-size: 14px; margin: 0 0 14px; }
+  .row { margin: 0 0 16px; }
+  .lab { color: #555; margin-bottom: 4px; }
+  img { display: block; box-shadow: 0 1px 4px rgba(0,0,0,.25); }
+  input[type=range] { width: 460px; vertical-align: middle; }
+  #live { border: 1px dashed #bbb; padding: 8px; background: #fff; }
+</style>
+
+<h1>ticker.svg &middot; responsive tier check</h1>
+
+<div class="row" id="live">
+  <div class="lab">drag: <span id="w">620</span>px
+    &middot; tier <span id="tier">A</span>, type <span id="px">14.0</span>px</div>
+  <input type="range" id="slider" min="280" max="620" value="620">
+  <img id="target" src="ticker.svg" width="620" alt="career ticker">
+</div>
+
+<div class="row"><div class="lab">620px &middot; tier A, 14.0px type, three rows</div>
+  <img src="ticker.svg" width="620"></div>
+<div class="row"><div class="lab">490px &middot; tier A at its floor, 11.1px type</div>
+  <img src="ticker.svg" width="490"></div>
+<div class="row"><div class="lab">470px &middot; tier B takes over, playoffs fold in</div>
+  <img src="ticker.svg" width="470"></div>
+<div class="row"><div class="lab">330px &middot; tier B at its floor, 11.2px type</div>
+  <img src="ticker.svg" width="330"></div>
+
+<script>
+  // Mirrors the tier table build.py prints, so the readout is a check on the
+  // SVG rather than a second opinion pulled out of the air.
+  var TIERS = [{ name: 'A', font: 14.0, min: 487 }, { name: 'B', font: 21.0, min: 325 }];
+  var slider = document.getElementById('slider');
+  function update() {
+    var w = +slider.value;
+    document.getElementById('target').width = w;
+    document.getElementById('w').textContent = w;
+    var tier = w >= TIERS[0].min ? TIERS[0] : TIERS[1];
+    document.getElementById('tier').textContent = tier.name;
+    document.getElementById('px').textContent = (tier.font * w / 620).toFixed(1);
+  }
+  slider.addEventListener('input', update);
+  update();
+</script>

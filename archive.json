@@ -1,0 +1,559 @@
+{
+  "players": [
+    {
+      "isGoalie": true,
+      "leagues": {
+        "SHL": {
+          "indexID": 4329,
+          "lastSeason": 85,
+          "playoffs": {
+            "gamesPlayed": 87,
+            "goalsAgainst": 316,
+            "losses": 28,
+            "minutes": 5168,
+            "ot": 12,
+            "saves": 2689,
+            "shotsAgainst": 3005,
+            "shutouts": 2,
+            "wins": 41
+          },
+          "position": "G",
+          "regular": {
+            "gamesPlayed": 435,
+            "goalsAgainst": 1478,
+            "losses": 151,
+            "minutes": 24686,
+            "ot": 29,
+            "saves": 12658,
+            "shotsAgainst": 14136,
+            "shutouts": 21,
+            "wins": 231
+          },
+          "stints": [
+            {
+              "playoffs": {
+                "gamesPlayed": 14,
+                "goalsAgainst": 49,
+                "losses": 3,
+                "minutes": 784,
+                "ot": 2,
+                "saves": 454,
+                "shotsAgainst": 503,
+                "shutouts": 0,
+                "wins": 6
+              },
+              "regular": {
+                "gamesPlayed": 72,
+                "goalsAgainst": 232,
+                "losses": 23,
+                "minutes": 4194,
+                "ot": 7,
+                "saves": 2328,
+                "shotsAgainst": 2560,
+                "shutouts": 4,
+                "wins": 39
+              },
+              "seasons": [
+                76,
+                77
+              ],
+              "team": "BUF",
+              "teamID": 0
+            },
+            {
+              "playoffs": {
+                "gamesPlayed": 73,
+                "goalsAgainst": 267,
+                "losses": 25,
+                "minutes": 4384,
+                "ot": 10,
+                "saves": 2235,
+                "shotsAgainst": 2502,
+                "shutouts": 2,
+                "wins": 35
+              },
+              "regular": {
+                "gamesPlayed": 338,
+                "goalsAgainst": 1158,
+                "losses": 117,
+                "minutes": 19520,
+                "ot": 22,
+                "saves": 9771,
+                "shotsAgainst": 10929,
+                "shutouts": 16,
+                "wins": 190
+              },
+              "seasons": [
+                78,
+                79,
+                80,
+                81,
+                82,
+                83,
+                84
+              ],
+              "team": "NEW",
+              "teamID": 5
+            },
+            {
+              "regular": {
+                "gamesPlayed": 25,
+                "goalsAgainst": 88,
+                "losses": 11,
+                "minutes": 972,
+                "ot": 0,
+                "saves": 559,
+                "shotsAgainst": 647,
+                "shutouts": 1,
+                "wins": 2
+              },
+              "seasons": [
+                85
+              ],
+              "team": "WPG",
+              "teamID": 11
+            }
+          ]
+        },
+        "SMJHL": {
+          "indexID": 2241,
+          "lastSeason": 75,
+          "playoffs": {
+            "gamesPlayed": 6,
+            "goalsAgainst": 27,
+            "losses": 3,
+            "minutes": 359,
+            "ot": 1,
+            "saves": 221,
+            "shotsAgainst": 248,
+            "shutouts": 0,
+            "wins": 2
+          },
+          "position": "G",
+          "regular": {
+            "gamesPlayed": 202,
+            "goalsAgainst": 764,
+            "losses": 117,
+            "minutes": 11501,
+            "ot": 9,
+            "saves": 6462,
+            "shotsAgainst": 7226,
+            "shutouts": 4,
+            "wins": 69
+          },
+          "stints": [
+            {
+              "playoffs": {
+                "gamesPlayed": 6,
+                "goalsAgainst": 27,
+                "losses": 3,
+                "minutes": 359,
+                "ot": 1,
+                "saves": 221,
+                "shotsAgainst": 248,
+                "shutouts": 0,
+                "wins": 2
+              },
+              "regular": {
+                "gamesPlayed": 202,
+                "goalsAgainst": 764,
+                "losses": 117,
+                "minutes": 11501,
+                "ot": 9,
+                "saves": 6462,
+                "shotsAgainst": 7226,
+                "shutouts": 4,
+                "wins": 69
+              },
+              "seasons": [
+                72,
+                73,
+                74,
+                75
+              ],
+              "team": "KEL",
+              "teamID": 1
+            }
+          ]
+        }
+      },
+      "name": "Five-Hole Sieve",
+      "pid": 1094,
+      "position": "Goalie",
+      "status": "retired",
+      "tournaments": {
+        "IIHF": {
+          "indexID": 1213,
+          "nations": [
+            "CZH"
+          ],
+          "seasons": [
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85
+          ],
+          "selections": 12
+        },
+        "WJC": {
+          "indexID": 1187,
+          "nations": [
+            "CZE",
+            "ICE",
+            "WOR"
+          ],
+          "seasons": [
+            72,
+            73,
+            74,
+            75
+          ],
+          "selections": 4
+        }
+      }
+    },
+    {
+      "isGoalie": false,
+      "leagues": {
+        "SHL": {
+          "indexID": 2554,
+          "lastSeason": 72,
+          "playoffs": {
+            "assists": 40,
+            "gamesPlayed": 71,
+            "giveaways": 79,
+            "goals": 36,
+            "hits": 99,
+            "pim": 16,
+            "plusMinus": 23,
+            "points": 76,
+            "ppPoints": 10,
+            "shPoints": 0,
+            "shotsBlocked": 40,
+            "shotsOnGoal": 256,
+            "takeaways": 31,
+            "timeOnIce": 91491
+          },
+          "position": "RW",
+          "regular": {
+            "assists": 409,
+            "gamesPlayed": 528,
+            "giveaways": 451,
+            "goals": 245,
+            "hits": 886,
+            "pim": 283,
+            "plusMinus": 178,
+            "points": 654,
+            "ppPoints": 154,
+            "shPoints": 3,
+            "shotsBlocked": 258,
+            "shotsOnGoal": 1867,
+            "takeaways": 218,
+            "timeOnIce": 647643
+          },
+          "stints": [
+            {
+              "playoffs": {
+                "assists": 1,
+                "gamesPlayed": 6,
+                "giveaways": 5,
+                "goals": 0,
+                "hits": 2,
+                "pim": 2,
+                "plusMinus": 1,
+                "points": 1,
+                "ppPoints": 0,
+                "shPoints": 0,
+                "shotsBlocked": 5,
+                "shotsOnGoal": 16,
+                "takeaways": 3,
+                "timeOnIce": 6635
+              },
+              "regular": {
+                "assists": 29,
+                "gamesPlayed": 66,
+                "giveaways": 39,
+                "goals": 13,
+                "hits": 51,
+                "pim": 25,
+                "plusMinus": 21,
+                "points": 42,
+                "ppPoints": 4,
+                "shPoints": 0,
+                "shotsBlocked": 65,
+                "shotsOnGoal": 150,
+                "takeaways": 21,
+                "timeOnIce": 73492
+              },
+              "seasons": [
+                65
+              ],
+              "team": "SEA",
+              "teamID": 19
+            },
+            {
+              "playoffs": {
+                "assists": 39,
+                "gamesPlayed": 65,
+                "giveaways": 74,
+                "goals": 36,
+                "hits": 97,
+                "pim": 14,
+                "plusMinus": 22,
+                "points": 75,
+                "ppPoints": 10,
+                "shPoints": 0,
+                "shotsBlocked": 35,
+                "shotsOnGoal": 240,
+                "takeaways": 28,
+                "timeOnIce": 84856
+              },
+              "regular": {
+                "assists": 380,
+                "gamesPlayed": 462,
+                "giveaways": 412,
+                "goals": 232,
+                "hits": 835,
+                "pim": 258,
+                "plusMinus": 157,
+                "points": 612,
+                "ppPoints": 150,
+                "shPoints": 3,
+                "shotsBlocked": 193,
+                "shotsOnGoal": 1717,
+                "takeaways": 197,
+                "timeOnIce": 574151
+              },
+              "seasons": [
+                66,
+                67,
+                68,
+                69,
+                70,
+                71,
+                72
+              ],
+              "team": "MTL",
+              "teamID": 20
+            }
+          ]
+        },
+        "SMJHL": {
+          "indexID": 1377,
+          "lastSeason": 64,
+          "playoffs": {
+            "assists": 24,
+            "gamesPlayed": 38,
+            "giveaways": 19,
+            "goals": 22,
+            "hits": 39,
+            "pim": 10,
+            "plusMinus": 10,
+            "points": 46,
+            "ppPoints": 6,
+            "shPoints": 1,
+            "shotsBlocked": 27,
+            "shotsOnGoal": 132,
+            "takeaways": 15,
+            "timeOnIce": 44338
+          },
+          "position": "LW",
+          "regular": {
+            "assists": 110,
+            "gamesPlayed": 264,
+            "giveaways": 163,
+            "goals": 101,
+            "hits": 248,
+            "pim": 93,
+            "plusMinus": -15,
+            "points": 211,
+            "ppPoints": 49,
+            "shPoints": 2,
+            "shotsBlocked": 198,
+            "shotsOnGoal": 682,
+            "takeaways": 122,
+            "timeOnIce": 291358
+          },
+          "stints": [
+            {
+              "playoffs": {
+                "assists": 4,
+                "gamesPlayed": 12,
+                "giveaways": 6,
+                "goals": 4,
+                "hits": 12,
+                "pim": 4,
+                "plusMinus": -5,
+                "points": 8,
+                "ppPoints": 0,
+                "shPoints": 1,
+                "shotsBlocked": 14,
+                "shotsOnGoal": 27,
+                "takeaways": 7,
+                "timeOnIce": 12451
+              },
+              "regular": {
+                "assists": 45,
+                "gamesPlayed": 132,
+                "giveaways": 51,
+                "goals": 30,
+                "hits": 106,
+                "pim": 63,
+                "plusMinus": -48,
+                "points": 75,
+                "ppPoints": 22,
+                "shPoints": 1,
+                "shotsBlocked": 130,
+                "shotsOnGoal": 237,
+                "takeaways": 72,
+                "timeOnIce": 130974
+              },
+              "seasons": [
+                61,
+                62
+              ],
+              "team": "ANA",
+              "teamID": 5
+            },
+            {
+              "playoffs": {
+                "assists": 20,
+                "gamesPlayed": 26,
+                "giveaways": 13,
+                "goals": 18,
+                "hits": 27,
+                "pim": 6,
+                "plusMinus": 15,
+                "points": 38,
+                "ppPoints": 6,
+                "shPoints": 0,
+                "shotsBlocked": 13,
+                "shotsOnGoal": 105,
+                "takeaways": 8,
+                "timeOnIce": 31887
+              },
+              "regular": {
+                "assists": 65,
+                "gamesPlayed": 132,
+                "giveaways": 112,
+                "goals": 71,
+                "hits": 142,
+                "pim": 30,
+                "plusMinus": 33,
+                "points": 136,
+                "ppPoints": 27,
+                "shPoints": 1,
+                "shotsBlocked": 68,
+                "shotsOnGoal": 445,
+                "takeaways": 50,
+                "timeOnIce": 160384
+              },
+              "seasons": [
+                63,
+                64
+              ],
+              "team": "DET",
+              "teamID": 7
+            }
+          ]
+        }
+      },
+      "name": "Sconnie McHits",
+      "pid": null,
+      "position": "RW",
+      "status": "retired",
+      "tournaments": {
+        "IIHF": {
+          "indexID": 246,
+          "nations": [
+            "FIN"
+          ],
+          "seasons": [
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72
+          ],
+          "selections": 7
+        },
+        "WJC": {
+          "indexID": 652,
+          "nations": [
+            "FIN",
+            "NA",
+            "SWE"
+          ],
+          "seasons": [
+            62,
+            63,
+            64,
+            69,
+            70
+          ],
+          "selections": 5
+        }
+      }
+    }
+  ],
+  "teams": {
+    "0:0": {
+      "abbreviation": "BUF",
+      "name": "Buffalo Stampede",
+      "primary": "#164833",
+      "secondary": "#f6bf11"
+    },
+    "0:11": {
+      "abbreviation": "WPG",
+      "name": "Winnipeg Aurora",
+      "primary": "#0e2e2d",
+      "secondary": "#2ef9b4"
+    },
+    "0:19": {
+      "abbreviation": "SEA",
+      "name": "Seattle Argonauts",
+      "primary": "#192e58",
+      "secondary": "#c5942c"
+    },
+    "0:20": {
+      "abbreviation": "MTL",
+      "name": "Montreal Patriotes",
+      "primary": "#773141",
+      "secondary": "#ffb612"
+    },
+    "0:5": {
+      "abbreviation": "NEW",
+      "name": "New England Wolfpack",
+      "primary": "#008236",
+      "secondary": "#6d6e72"
+    },
+    "1:1": {
+      "abbreviation": "KEL",
+      "name": "Kelowna Knights",
+      "primary": "#0b340b",
+      "secondary": "#e5d478"
+    },
+    "1:5": {
+      "abbreviation": "ANA",
+      "name": "Anaheim Outlaws",
+      "primary": "#81030b",
+      "secondary": "#470407"
+    },
+    "1:7": {
+      "abbreviation": "DET",
+      "name": "Detroit Falcons",
+      "primary": "#d02128",
+      "secondary": "#000000"
+    }
+  }
+}

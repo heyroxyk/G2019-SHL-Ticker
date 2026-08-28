@@ -1,0 +1,512 @@
+{
+  "awards": [
+    {
+      "achievement": "35",
+      "achievementDescription": "SMJHL Award For Best Defenseman",
+      "achievementName": "Quilha Agante",
+      "fhmID": 4226,
+      "isAward": true,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits Jr.",
+      "playerUpdateID": 2378,
+      "seasonID": 88,
+      "teamID": 14,
+      "userID": 5745,
+      "won": false
+    },
+    {
+      "achievement": "3",
+      "achievementDescription": "1st All Star Team",
+      "achievementName": "1st All Star Team",
+      "fhmID": 4329,
+      "isAward": false,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 83,
+      "teamID": 5,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "31",
+      "achievementDescription": "SHL Award for the Best Goalie",
+      "achievementName": "John McBride",
+      "fhmID": 4329,
+      "isAward": true,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 78,
+      "teamID": 5,
+      "userID": 5745,
+      "won": false
+    },
+    {
+      "achievement": "4",
+      "achievementDescription": "2nd All Star Team",
+      "achievementName": "2nd All Star Team",
+      "fhmID": 4329,
+      "isAward": false,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 78,
+      "teamID": 5,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "31",
+      "achievementDescription": "SHL Award for the Best Goalie",
+      "achievementName": "John McBride",
+      "fhmID": 4329,
+      "isAward": true,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 77,
+      "teamID": 0,
+      "userID": 5745,
+      "won": false
+    },
+    {
+      "achievement": "4",
+      "achievementDescription": "2nd All Star Team",
+      "achievementName": "2nd All Star Team",
+      "fhmID": 4329,
+      "isAward": false,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 77,
+      "teamID": 0,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "41",
+      "achievementDescription": "Rookie All Star Team",
+      "achievementName": "Rookie All Star Team",
+      "fhmID": 4329,
+      "isAward": false,
+      "leagueID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 76,
+      "teamID": 0,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "51",
+      "achievementDescription": "Silver Medal",
+      "achievementName": "Silver",
+      "fhmID": 1187,
+      "isAward": false,
+      "leagueID": 3,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "seasonID": 74,
+      "teamID": 13,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "5",
+      "achievementDescription": "3rd All Star Team",
+      "achievementName": "3rd All Star Team",
+      "fhmID": 2554,
+      "isAward": true,
+      "leagueID": 0,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 72,
+      "teamID": 20,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "51",
+      "achievementDescription": "Silver Medal",
+      "achievementName": "Silver",
+      "fhmID": 246,
+      "isAward": false,
+      "leagueID": 2,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 68,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "52",
+      "achievementDescription": "Bronze Medal",
+      "achievementName": "Bronze",
+      "fhmID": 246,
+      "isAward": false,
+      "leagueID": 2,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 67,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "50",
+      "achievementDescription": "Gold Medal",
+      "achievementName": "Gold",
+      "fhmID": 246,
+      "isAward": false,
+      "leagueID": 2,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": 0,
+      "seasonID": 66,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "6",
+      "achievementDescription": "SHL Award for the Most Improved player",
+      "achievementName": "Aidan Richan",
+      "fhmID": 2554,
+      "isAward": true,
+      "leagueID": 0,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 66,
+      "teamID": 20,
+      "userID": 5745,
+      "won": false
+    },
+    {
+      "achievement": "41",
+      "achievementDescription": "Rookie All Star Team",
+      "achievementName": "Rookie All Star Team",
+      "fhmID": 2554,
+      "isAward": false,
+      "leagueID": 0,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 65,
+      "teamID": 19,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "15",
+      "achievementDescription": "SMJHL Awards for the Playoff MVP",
+      "achievementName": "Brodie Witzel",
+      "fhmID": 1377,
+      "isAward": true,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 64,
+      "teamID": 7,
+      "userID": 5745,
+      "won": false
+    },
+    {
+      "achievement": "25",
+      "achievementDescription": "MVP voted by Awards Committee",
+      "achievementName": "Ideen Fallah",
+      "fhmID": 1377,
+      "isAward": true,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 64,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "3",
+      "achievementDescription": "1st All Star Team",
+      "achievementName": "1st All Star Team",
+      "fhmID": 1377,
+      "isAward": false,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 64,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "37",
+      "achievementDescription": "SMJHL Goals Leader",
+      "achievementName": "Roberto Martucci",
+      "fhmID": 1377,
+      "isAward": true,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 64,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "40",
+      "achievementDescription": "SMJHL Playoff Points Leader",
+      "achievementName": "Ronan O'Keefe",
+      "fhmID": 1377,
+      "isAward": true,
+      "leagueID": 1,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 64,
+      "teamID": 7,
+      "userID": 5745,
+      "won": true
+    },
+    {
+      "achievement": "50",
+      "achievementDescription": "Gold Medal",
+      "achievementName": "Gold",
+      "fhmID": 652,
+      "isAward": false,
+      "leagueID": 3,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "seasonID": 63,
+      "teamID": 6,
+      "userID": 5745,
+      "won": true
+    }
+  ],
+  "drafts": [
+    {
+      "draftNumber": 4,
+      "isExpansion": false,
+      "leagueID": 1,
+      "originalTeamID": 17,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "round": 1,
+      "seasonID": 61,
+      "teamID": 5,
+      "userID": 5745
+    },
+    {
+      "draftNumber": 3,
+      "isExpansion": false,
+      "leagueID": 0,
+      "originalTeamID": 20,
+      "playerName": "Sconnie McHits",
+      "playerUpdateID": null,
+      "round": 1,
+      "seasonID": 62,
+      "teamID": 19,
+      "userID": 5745
+    },
+    {
+      "draftNumber": 32,
+      "isExpansion": false,
+      "leagueID": 0,
+      "originalTeamID": 0,
+      "playerName": "Five-Hole Sieve",
+      "playerUpdateID": 1094,
+      "round": 2,
+      "seasonID": 73,
+      "teamID": 0,
+      "userID": 5745
+    },
+    {
+      "draftNumber": 2,
+      "isExpansion": false,
+      "leagueID": 1,
+      "originalTeamID": 14,
+      "playerName": "Sconnie McHits Jr.",
+      "playerUpdateID": 2378,
+      "round": 1,
+      "seasonID": 86,
+      "teamID": 14,
+      "userID": 5745
+    },
+    {
+      "draftNumber": 8,
+      "isExpansion": false,
+      "leagueID": 0,
+      "originalTeamID": 6,
+      "playerName": "Sconnie McHits Jr.",
+      "playerUpdateID": 2378,
+      "round": 1,
+      "seasonID": 87,
+      "teamID": 6,
+      "userID": 5745
+    }
+  ],
+  "players": [
+    {
+      "isGoalie": false,
+      "leagues": {
+        "SMJHL": {
+          "indexID": 4226,
+          "lastSeason": 89,
+          "playoffs": {
+            "assists": 36,
+            "gamesPlayed": 59,
+            "giveaways": 22,
+            "goals": 9,
+            "hits": 135,
+            "pim": 30,
+            "plusMinus": 11,
+            "points": 45,
+            "ppPoints": 14,
+            "shPoints": 3,
+            "shotsBlocked": 57,
+            "shotsOnGoal": 118,
+            "takeaways": 43,
+            "timeOnIce": 80520
+          },
+          "position": "RD",
+          "regular": {
+            "assists": 147,
+            "gamesPlayed": 281,
+            "giveaways": 105,
+            "goals": 64,
+            "hits": 710,
+            "pim": 158,
+            "plusMinus": 105,
+            "points": 211,
+            "ppPoints": 63,
+            "shPoints": 12,
+            "shotsBlocked": 284,
+            "shotsOnGoal": 848,
+            "takeaways": 248,
+            "timeOnIce": 380617
+          },
+          "stints": [
+            {
+              "playoffs": {
+                "assists": 0,
+                "gamesPlayed": 4,
+                "giveaways": 4,
+                "goals": 0,
+                "hits": 10,
+                "pim": 4,
+                "plusMinus": -9,
+                "points": 0,
+                "ppPoints": 0,
+                "shPoints": 0,
+                "shotsBlocked": 3,
+                "shotsOnGoal": 7,
+                "takeaways": 2,
+                "timeOnIce": 5555
+              },
+              "regular": {
+                "assists": 4,
+                "gamesPlayed": 17,
+                "giveaways": 9,
+                "goals": 1,
+                "hits": 34,
+                "pim": 4,
+                "plusMinus": -18,
+                "points": 5,
+                "ppPoints": 0,
+                "shPoints": 0,
+                "shotsBlocked": 25,
+                "shotsOnGoal": 40,
+                "takeaways": 10,
+                "timeOnIce": 22105
+              },
+              "seasons": [
+                85
+              ],
+              "team": "TBW",
+              "teamID": 16
+            },
+            {
+              "playoffs": {
+                "assists": 36,
+                "gamesPlayed": 55,
+                "giveaways": 18,
+                "goals": 9,
+                "hits": 125,
+                "pim": 26,
+                "plusMinus": 20,
+                "points": 45,
+                "ppPoints": 14,
+                "shPoints": 3,
+                "shotsBlocked": 54,
+                "shotsOnGoal": 111,
+                "takeaways": 41,
+                "timeOnIce": 74965
+              },
+              "regular": {
+                "assists": 143,
+                "gamesPlayed": 264,
+                "giveaways": 96,
+                "goals": 63,
+                "hits": 676,
+                "pim": 154,
+                "plusMinus": 123,
+                "points": 206,
+                "ppPoints": 63,
+                "shPoints": 12,
+                "shotsBlocked": 259,
+                "shotsOnGoal": 808,
+                "takeaways": 238,
+                "timeOnIce": 358512
+              },
+              "seasons": [
+                86,
+                87,
+                88,
+                89
+              ],
+              "team": "NBB",
+              "teamID": 14
+            }
+          ]
+        }
+      },
+      "name": "Sconnie McHits Jr.",
+      "pid": 2378,
+      "position": "Right Defense",
+      "status": "active",
+      "tournaments": {
+        "WJC": {
+          "indexID": 3145,
+          "nations": [
+            "CZE",
+            "RHI",
+            "WOR"
+          ],
+          "seasons": [
+            85,
+            86,
+            87,
+            88
+          ],
+          "selections": 4
+        }
+      }
+    }
+  ],
+  "teams": {
+    "1:14": {
+      "abbreviation": "NBB",
+      "name": "Nevada Battleborn",
+      "primary": "#0c2046",
+      "secondary": "#c2ad6e"
+    },
+    "1:16": {
+      "abbreviation": "TBW",
+      "name": "Thunder Bay Walleye",
+      "primary": "#2f0038",
+      "secondary": "#fbbc19"
+    }
+  },
+  "user": {
+    "uid": 5745,
+    "username": "G2019"
+  }
+}
