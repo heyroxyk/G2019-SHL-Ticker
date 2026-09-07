@@ -184,7 +184,7 @@
       <g class="card"><text class="stat" x="14278.3" y="35.0" font-size="14.00">REGULAR   17GP   1-4-5   -18   4PIM   34HIT</text><text class="stat" x="14278.3" y="55.0" font-size="14.00">PLAYOFFS   4GP   0-0-0   -9   4PIM   10HIT</text></g>
       <g class="card"><text class="stat" x="14941.8" y="35.0" font-size="14.00">REGULAR   264GP   63-143-206   +123   154PIM   676HIT</text><text class="stat" x="14941.8" y="55.0" font-size="14.00">PLAYOFFS   55GP   9-36-45   +20   26PIM   125HIT</text></g>
       <g class="card"><text class="stat" x="15605.3" y="35.0" font-size="14.00">REGULAR   281GP   64-147-211   +105   158PIM   710HIT</text><text class="stat" x="15605.3" y="55.0" font-size="14.00">PLAYOFFS   59GP   9-36-45   +11   30PIM   135HIT</text></g>
-      <g class="card"><text class="stat" x="16268.9" y="35.0" font-size="14.00">WJC   4 SELECTIONS   CZE RHI WOR</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="35.0" font-size="14.00">WJC   5 SELECTIONS   CZE RHI WOR</text></g>
       <g class="card"><text class="muted" x="16932.4" y="35.0" font-size="14.00">NOMINATED · QUILHA AGANTE</text></g>
     </g>
     <clipPath id="clipB"><rect x="0" y="30.00" width="620" height="30.00"/></clipPath>
@@ -213,7 +213,7 @@
       <g class="card"><text class="stat" x="14278.3" y="52.5" font-size="21.00">17GP  1-4-5  -18  ·  PO 4GP 0P</text></g>
       <g class="card"><text class="stat" x="14941.8" y="52.5" font-size="21.00">264GP  63-143-206  +123  ·  PO 55GP 45P</text></g>
       <g class="card"><text class="stat" x="15605.3" y="52.5" font-size="21.00">281GP  64-147-211  +105  ·  PO 59GP 45P</text></g>
-      <g class="card"><text class="stat" x="16268.9" y="52.5" font-size="21.00">WJC 4</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="52.5" font-size="21.00">WJC 5</text></g>
       <g class="card"><text class="stat" x="16932.4" y="52.5" font-size="21.00">QUILHA AGANTE (NOM)</text></g>
     </g>
   </defs>
