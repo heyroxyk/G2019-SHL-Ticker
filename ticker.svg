@@ -25,12 +25,12 @@
     /* The only colour-coded thing on the ticker is the club name. */
     .club  { fill: #c2ad6e; }
 
-    .strip { animation: rollA 172.52s linear infinite; }
+    .strip { animation: rollA 179.16s linear infinite; }
     .plates g { opacity: 0; }
     @keyframes rollA { from { transform: translateX(0); }
-                       to   { transform: translateX(-17252.2px); } }
+                       to   { transform: translateX(-17915.8px); } }
     @keyframes rollB { from { transform: translateX(0); }
-                       to   { transform: translateX(-17252.2px); } }
+                       to   { transform: translateX(-17915.8px); } }
 
     /* Tier A is the default. Tier B takes over where tier A's type would fall
        below the 11px floor. An SVG loaded as an image evaluates this against the
@@ -39,119 +39,123 @@
     @media (max-width: 486px) {
       .tierA { display: none; }
       .tierB { display: block; }
-      .strip { animation-name: rollB; animation-duration: 172.52s; }
+      .strip { animation-name: rollB; animation-duration: 179.16s; }
     }
 
-    :root { --loop: 172.52s; }
-    @keyframes plateA1 { 0.2308%,3.6154%{opacity:1} 3.8462%,100%{opacity:0} }
+    :root { --loop: 179.16s; }
+    @keyframes plateA1 { 0.2222%,3.4815%{opacity:1} 3.7037%,100%{opacity:0} }
     .tierA .p1 { animation: plateA1 var(--loop) linear infinite; }
-    @keyframes plateA2 { 0%,3.8462%{opacity:0} 4.0769%,7.4615%{opacity:1} 7.6923%,100%{opacity:0} }
+    @keyframes plateA2 { 0%,3.7037%{opacity:0} 3.9259%,7.1852%{opacity:1} 7.4074%,100%{opacity:0} }
     .tierA .p2 { animation: plateA2 var(--loop) linear infinite; }
-    @keyframes plateA3 { 0%,7.6923%{opacity:0} 7.9231%,11.3077%{opacity:1} 11.5385%,100%{opacity:0} }
+    @keyframes plateA3 { 0%,7.4074%{opacity:0} 7.6296%,10.8889%{opacity:1} 11.1111%,100%{opacity:0} }
     .tierA .p3 { animation: plateA3 var(--loop) linear infinite; }
-    @keyframes plateA4 { 0%,11.5385%{opacity:0} 11.7692%,15.1538%{opacity:1} 15.3846%,100%{opacity:0} }
+    @keyframes plateA4 { 0%,11.1111%{opacity:0} 11.3333%,14.5926%{opacity:1} 14.8148%,100%{opacity:0} }
     .tierA .p4 { animation: plateA4 var(--loop) linear infinite; }
-    @keyframes plateA5 { 0%,15.3846%{opacity:0} 15.6154%,19.0000%{opacity:1} 19.2308%,100%{opacity:0} }
+    @keyframes plateA5 { 0%,14.8148%{opacity:0} 15.0370%,18.2963%{opacity:1} 18.5185%,100%{opacity:0} }
     .tierA .p5 { animation: plateA5 var(--loop) linear infinite; }
-    @keyframes plateA6 { 0%,19.2308%{opacity:0} 19.4615%,22.8462%{opacity:1} 23.0769%,100%{opacity:0} }
+    @keyframes plateA6 { 0%,18.5185%{opacity:0} 18.7407%,22.0000%{opacity:1} 22.2222%,100%{opacity:0} }
     .tierA .p6 { animation: plateA6 var(--loop) linear infinite; }
-    @keyframes plateA7 { 0%,23.0769%{opacity:0} 23.3077%,26.6923%{opacity:1} 26.9231%,100%{opacity:0} }
+    @keyframes plateA7 { 0%,22.2222%{opacity:0} 22.4444%,25.7037%{opacity:1} 25.9259%,100%{opacity:0} }
     .tierA .p7 { animation: plateA7 var(--loop) linear infinite; }
-    @keyframes plateA8 { 0%,26.9231%{opacity:0} 27.1538%,30.5385%{opacity:1} 30.7692%,100%{opacity:0} }
+    @keyframes plateA8 { 0%,25.9259%{opacity:0} 26.1481%,29.4074%{opacity:1} 29.6296%,100%{opacity:0} }
     .tierA .p8 { animation: plateA8 var(--loop) linear infinite; }
-    @keyframes plateA9 { 0%,30.7692%{opacity:0} 31.0000%,34.3846%{opacity:1} 34.6154%,100%{opacity:0} }
+    @keyframes plateA9 { 0%,29.6296%{opacity:0} 29.8519%,33.1111%{opacity:1} 33.3333%,100%{opacity:0} }
     .tierA .p9 { animation: plateA9 var(--loop) linear infinite; }
-    @keyframes plateA10 { 0%,34.6154%{opacity:0} 34.8462%,38.2308%{opacity:1} 38.4615%,100%{opacity:0} }
+    @keyframes plateA10 { 0%,33.3333%{opacity:0} 33.5556%,36.8148%{opacity:1} 37.0370%,100%{opacity:0} }
     .tierA .p10 { animation: plateA10 var(--loop) linear infinite; }
-    @keyframes plateA11 { 0%,38.4615%{opacity:0} 38.6923%,42.0769%{opacity:1} 42.3077%,100%{opacity:0} }
+    @keyframes plateA11 { 0%,37.0370%{opacity:0} 37.2593%,40.5185%{opacity:1} 40.7407%,100%{opacity:0} }
     .tierA .p11 { animation: plateA11 var(--loop) linear infinite; }
-    @keyframes plateA12 { 0%,42.3077%{opacity:0} 42.5385%,45.9231%{opacity:1} 46.1538%,100%{opacity:0} }
+    @keyframes plateA12 { 0%,40.7407%{opacity:0} 40.9630%,44.2222%{opacity:1} 44.4444%,100%{opacity:0} }
     .tierA .p12 { animation: plateA12 var(--loop) linear infinite; }
-    @keyframes plateA13 { 0%,46.1538%{opacity:0} 46.3846%,49.7692%{opacity:1} 50.0000%,100%{opacity:0} }
+    @keyframes plateA13 { 0%,44.4444%{opacity:0} 44.6667%,47.9259%{opacity:1} 48.1481%,100%{opacity:0} }
     .tierA .p13 { animation: plateA13 var(--loop) linear infinite; }
-    @keyframes plateA14 { 0%,50.0000%{opacity:0} 50.2308%,53.6154%{opacity:1} 53.8462%,100%{opacity:0} }
+    @keyframes plateA14 { 0%,48.1481%{opacity:0} 48.3704%,51.6296%{opacity:1} 51.8519%,100%{opacity:0} }
     .tierA .p14 { animation: plateA14 var(--loop) linear infinite; }
-    @keyframes plateA15 { 0%,53.8462%{opacity:0} 54.0769%,57.4615%{opacity:1} 57.6923%,100%{opacity:0} }
+    @keyframes plateA15 { 0%,51.8519%{opacity:0} 52.0741%,55.3333%{opacity:1} 55.5556%,100%{opacity:0} }
     .tierA .p15 { animation: plateA15 var(--loop) linear infinite; }
-    @keyframes plateA16 { 0%,57.6923%{opacity:0} 57.9231%,61.3077%{opacity:1} 61.5385%,100%{opacity:0} }
+    @keyframes plateA16 { 0%,55.5556%{opacity:0} 55.7778%,59.0370%{opacity:1} 59.2593%,100%{opacity:0} }
     .tierA .p16 { animation: plateA16 var(--loop) linear infinite; }
-    @keyframes plateA17 { 0%,61.5385%{opacity:0} 61.7692%,65.1538%{opacity:1} 65.3846%,100%{opacity:0} }
+    @keyframes plateA17 { 0%,59.2593%{opacity:0} 59.4815%,62.7407%{opacity:1} 62.9630%,100%{opacity:0} }
     .tierA .p17 { animation: plateA17 var(--loop) linear infinite; }
-    @keyframes plateA18 { 0%,65.3846%{opacity:0} 65.6154%,69.0000%{opacity:1} 69.2308%,100%{opacity:0} }
+    @keyframes plateA18 { 0%,62.9630%{opacity:0} 63.1852%,66.4444%{opacity:1} 66.6667%,100%{opacity:0} }
     .tierA .p18 { animation: plateA18 var(--loop) linear infinite; }
-    @keyframes plateA19 { 0%,69.2308%{opacity:0} 69.4615%,72.8462%{opacity:1} 73.0769%,100%{opacity:0} }
+    @keyframes plateA19 { 0%,66.6667%{opacity:0} 66.8889%,70.1481%{opacity:1} 70.3704%,100%{opacity:0} }
     .tierA .p19 { animation: plateA19 var(--loop) linear infinite; }
-    @keyframes plateA20 { 0%,73.0769%{opacity:0} 73.3077%,76.6923%{opacity:1} 76.9231%,100%{opacity:0} }
+    @keyframes plateA20 { 0%,70.3704%{opacity:0} 70.5926%,73.8519%{opacity:1} 74.0741%,100%{opacity:0} }
     .tierA .p20 { animation: plateA20 var(--loop) linear infinite; }
-    @keyframes plateA21 { 0%,76.9231%{opacity:0} 77.1538%,80.5385%{opacity:1} 80.7692%,100%{opacity:0} }
+    @keyframes plateA21 { 0%,74.0741%{opacity:0} 74.2963%,77.5556%{opacity:1} 77.7778%,100%{opacity:0} }
     .tierA .p21 { animation: plateA21 var(--loop) linear infinite; }
-    @keyframes plateA22 { 0%,80.7692%{opacity:0} 81.0000%,84.3846%{opacity:1} 84.6154%,100%{opacity:0} }
+    @keyframes plateA22 { 0%,77.7778%{opacity:0} 78.0000%,81.2593%{opacity:1} 81.4815%,100%{opacity:0} }
     .tierA .p22 { animation: plateA22 var(--loop) linear infinite; }
-    @keyframes plateA23 { 0%,84.6154%{opacity:0} 84.8462%,88.2308%{opacity:1} 88.4615%,100%{opacity:0} }
+    @keyframes plateA23 { 0%,81.4815%{opacity:0} 81.7037%,84.9630%{opacity:1} 85.1852%,100%{opacity:0} }
     .tierA .p23 { animation: plateA23 var(--loop) linear infinite; }
-    @keyframes plateA24 { 0%,88.4615%{opacity:0} 88.6923%,92.0769%{opacity:1} 92.3077%,100%{opacity:0} }
+    @keyframes plateA24 { 0%,85.1852%{opacity:0} 85.4074%,88.6667%{opacity:1} 88.8889%,100%{opacity:0} }
     .tierA .p24 { animation: plateA24 var(--loop) linear infinite; }
-    @keyframes plateA25 { 0%,92.3077%{opacity:0} 92.5385%,95.9231%{opacity:1} 96.1538%,100%{opacity:0} }
+    @keyframes plateA25 { 0%,88.8889%{opacity:0} 89.1111%,92.3704%{opacity:1} 92.5926%,100%{opacity:0} }
     .tierA .p25 { animation: plateA25 var(--loop) linear infinite; }
-    @keyframes plateA26 { 0%,96.1538%{opacity:0} 96.3846%,99.7692%{opacity:1} }
+    @keyframes plateA26 { 0%,92.5926%{opacity:0} 92.8148%,96.0741%{opacity:1} 96.2963%,100%{opacity:0} }
     .tierA .p26 { animation: plateA26 var(--loop) linear infinite; }
-    @keyframes plateB1 { 0.2308%,3.6154%{opacity:1} 3.8462%,100%{opacity:0} }
+    @keyframes plateA27 { 0%,96.2963%{opacity:0} 96.5185%,99.7778%{opacity:1} }
+    .tierA .p27 { animation: plateA27 var(--loop) linear infinite; }
+    @keyframes plateB1 { 0.2222%,3.4815%{opacity:1} 3.7037%,100%{opacity:0} }
     .tierB .p1 { animation: plateB1 var(--loop) linear infinite; }
-    @keyframes plateB2 { 0%,3.8462%{opacity:0} 4.0769%,7.4615%{opacity:1} 7.6923%,100%{opacity:0} }
+    @keyframes plateB2 { 0%,3.7037%{opacity:0} 3.9259%,7.1852%{opacity:1} 7.4074%,100%{opacity:0} }
     .tierB .p2 { animation: plateB2 var(--loop) linear infinite; }
-    @keyframes plateB3 { 0%,7.6923%{opacity:0} 7.9231%,11.3077%{opacity:1} 11.5385%,100%{opacity:0} }
+    @keyframes plateB3 { 0%,7.4074%{opacity:0} 7.6296%,10.8889%{opacity:1} 11.1111%,100%{opacity:0} }
     .tierB .p3 { animation: plateB3 var(--loop) linear infinite; }
-    @keyframes plateB4 { 0%,11.5385%{opacity:0} 11.7692%,15.1538%{opacity:1} 15.3846%,100%{opacity:0} }
+    @keyframes plateB4 { 0%,11.1111%{opacity:0} 11.3333%,14.5926%{opacity:1} 14.8148%,100%{opacity:0} }
     .tierB .p4 { animation: plateB4 var(--loop) linear infinite; }
-    @keyframes plateB5 { 0%,15.3846%{opacity:0} 15.6154%,19.0000%{opacity:1} 19.2308%,100%{opacity:0} }
+    @keyframes plateB5 { 0%,14.8148%{opacity:0} 15.0370%,18.2963%{opacity:1} 18.5185%,100%{opacity:0} }
     .tierB .p5 { animation: plateB5 var(--loop) linear infinite; }
-    @keyframes plateB6 { 0%,19.2308%{opacity:0} 19.4615%,22.8462%{opacity:1} 23.0769%,100%{opacity:0} }
+    @keyframes plateB6 { 0%,18.5185%{opacity:0} 18.7407%,22.0000%{opacity:1} 22.2222%,100%{opacity:0} }
     .tierB .p6 { animation: plateB6 var(--loop) linear infinite; }
-    @keyframes plateB7 { 0%,23.0769%{opacity:0} 23.3077%,26.6923%{opacity:1} 26.9231%,100%{opacity:0} }
+    @keyframes plateB7 { 0%,22.2222%{opacity:0} 22.4444%,25.7037%{opacity:1} 25.9259%,100%{opacity:0} }
     .tierB .p7 { animation: plateB7 var(--loop) linear infinite; }
-    @keyframes plateB8 { 0%,26.9231%{opacity:0} 27.1538%,30.5385%{opacity:1} 30.7692%,100%{opacity:0} }
+    @keyframes plateB8 { 0%,25.9259%{opacity:0} 26.1481%,29.4074%{opacity:1} 29.6296%,100%{opacity:0} }
     .tierB .p8 { animation: plateB8 var(--loop) linear infinite; }
-    @keyframes plateB9 { 0%,30.7692%{opacity:0} 31.0000%,34.3846%{opacity:1} 34.6154%,100%{opacity:0} }
+    @keyframes plateB9 { 0%,29.6296%{opacity:0} 29.8519%,33.1111%{opacity:1} 33.3333%,100%{opacity:0} }
     .tierB .p9 { animation: plateB9 var(--loop) linear infinite; }
-    @keyframes plateB10 { 0%,34.6154%{opacity:0} 34.8462%,38.2308%{opacity:1} 38.4615%,100%{opacity:0} }
+    @keyframes plateB10 { 0%,33.3333%{opacity:0} 33.5556%,36.8148%{opacity:1} 37.0370%,100%{opacity:0} }
     .tierB .p10 { animation: plateB10 var(--loop) linear infinite; }
-    @keyframes plateB11 { 0%,38.4615%{opacity:0} 38.6923%,42.0769%{opacity:1} 42.3077%,100%{opacity:0} }
+    @keyframes plateB11 { 0%,37.0370%{opacity:0} 37.2593%,40.5185%{opacity:1} 40.7407%,100%{opacity:0} }
     .tierB .p11 { animation: plateB11 var(--loop) linear infinite; }
-    @keyframes plateB12 { 0%,42.3077%{opacity:0} 42.5385%,45.9231%{opacity:1} 46.1538%,100%{opacity:0} }
+    @keyframes plateB12 { 0%,40.7407%{opacity:0} 40.9630%,44.2222%{opacity:1} 44.4444%,100%{opacity:0} }
     .tierB .p12 { animation: plateB12 var(--loop) linear infinite; }
-    @keyframes plateB13 { 0%,46.1538%{opacity:0} 46.3846%,49.7692%{opacity:1} 50.0000%,100%{opacity:0} }
+    @keyframes plateB13 { 0%,44.4444%{opacity:0} 44.6667%,47.9259%{opacity:1} 48.1481%,100%{opacity:0} }
     .tierB .p13 { animation: plateB13 var(--loop) linear infinite; }
-    @keyframes plateB14 { 0%,50.0000%{opacity:0} 50.2308%,53.6154%{opacity:1} 53.8462%,100%{opacity:0} }
+    @keyframes plateB14 { 0%,48.1481%{opacity:0} 48.3704%,51.6296%{opacity:1} 51.8519%,100%{opacity:0} }
     .tierB .p14 { animation: plateB14 var(--loop) linear infinite; }
-    @keyframes plateB15 { 0%,53.8462%{opacity:0} 54.0769%,57.4615%{opacity:1} 57.6923%,100%{opacity:0} }
+    @keyframes plateB15 { 0%,51.8519%{opacity:0} 52.0741%,55.3333%{opacity:1} 55.5556%,100%{opacity:0} }
     .tierB .p15 { animation: plateB15 var(--loop) linear infinite; }
-    @keyframes plateB16 { 0%,57.6923%{opacity:0} 57.9231%,61.3077%{opacity:1} 61.5385%,100%{opacity:0} }
+    @keyframes plateB16 { 0%,55.5556%{opacity:0} 55.7778%,59.0370%{opacity:1} 59.2593%,100%{opacity:0} }
     .tierB .p16 { animation: plateB16 var(--loop) linear infinite; }
-    @keyframes plateB17 { 0%,61.5385%{opacity:0} 61.7692%,65.1538%{opacity:1} 65.3846%,100%{opacity:0} }
+    @keyframes plateB17 { 0%,59.2593%{opacity:0} 59.4815%,62.7407%{opacity:1} 62.9630%,100%{opacity:0} }
     .tierB .p17 { animation: plateB17 var(--loop) linear infinite; }
-    @keyframes plateB18 { 0%,65.3846%{opacity:0} 65.6154%,69.0000%{opacity:1} 69.2308%,100%{opacity:0} }
+    @keyframes plateB18 { 0%,62.9630%{opacity:0} 63.1852%,66.4444%{opacity:1} 66.6667%,100%{opacity:0} }
     .tierB .p18 { animation: plateB18 var(--loop) linear infinite; }
-    @keyframes plateB19 { 0%,69.2308%{opacity:0} 69.4615%,72.8462%{opacity:1} 73.0769%,100%{opacity:0} }
+    @keyframes plateB19 { 0%,66.6667%{opacity:0} 66.8889%,70.1481%{opacity:1} 70.3704%,100%{opacity:0} }
     .tierB .p19 { animation: plateB19 var(--loop) linear infinite; }
-    @keyframes plateB20 { 0%,73.0769%{opacity:0} 73.3077%,76.6923%{opacity:1} 76.9231%,100%{opacity:0} }
+    @keyframes plateB20 { 0%,70.3704%{opacity:0} 70.5926%,73.8519%{opacity:1} 74.0741%,100%{opacity:0} }
     .tierB .p20 { animation: plateB20 var(--loop) linear infinite; }
-    @keyframes plateB21 { 0%,76.9231%{opacity:0} 77.1538%,80.5385%{opacity:1} 80.7692%,100%{opacity:0} }
+    @keyframes plateB21 { 0%,74.0741%{opacity:0} 74.2963%,77.5556%{opacity:1} 77.7778%,100%{opacity:0} }
     .tierB .p21 { animation: plateB21 var(--loop) linear infinite; }
-    @keyframes plateB22 { 0%,80.7692%{opacity:0} 81.0000%,84.3846%{opacity:1} 84.6154%,100%{opacity:0} }
+    @keyframes plateB22 { 0%,77.7778%{opacity:0} 78.0000%,81.2593%{opacity:1} 81.4815%,100%{opacity:0} }
     .tierB .p22 { animation: plateB22 var(--loop) linear infinite; }
-    @keyframes plateB23 { 0%,84.6154%{opacity:0} 84.8462%,88.2308%{opacity:1} 88.4615%,100%{opacity:0} }
+    @keyframes plateB23 { 0%,81.4815%{opacity:0} 81.7037%,84.9630%{opacity:1} 85.1852%,100%{opacity:0} }
     .tierB .p23 { animation: plateB23 var(--loop) linear infinite; }
-    @keyframes plateB24 { 0%,88.4615%{opacity:0} 88.6923%,92.0769%{opacity:1} 92.3077%,100%{opacity:0} }
+    @keyframes plateB24 { 0%,85.1852%{opacity:0} 85.4074%,88.6667%{opacity:1} 88.8889%,100%{opacity:0} }
     .tierB .p24 { animation: plateB24 var(--loop) linear infinite; }
-    @keyframes plateB25 { 0%,92.3077%{opacity:0} 92.5385%,95.9231%{opacity:1} 96.1538%,100%{opacity:0} }
+    @keyframes plateB25 { 0%,88.8889%{opacity:0} 89.1111%,92.3704%{opacity:1} 92.5926%,100%{opacity:0} }
     .tierB .p25 { animation: plateB25 var(--loop) linear infinite; }
-    @keyframes plateB26 { 0%,96.1538%{opacity:0} 96.3846%,99.7692%{opacity:1} }
+    @keyframes plateB26 { 0%,92.5926%{opacity:0} 92.8148%,96.0741%{opacity:1} 96.2963%,100%{opacity:0} }
     .tierB .p26 { animation: plateB26 var(--loop) linear infinite; }
+    @keyframes plateB27 { 0%,96.2963%{opacity:0} 96.5185%,99.7778%{opacity:1} }
+    .tierB .p27 { animation: plateB27 var(--loop) linear infinite; }
     /* A ticker that cannot be stopped is unusable for anyone who needs it
        still. Pin the strip and cross-fade the cards in place instead, on the
        same schedule, so nothing becomes unreachable. */
     @media (prefers-reduced-motion: reduce) {
-      .strip     { animation-timing-function: steps(26); }
+      .strip     { animation-timing-function: steps(27); }
       .plates g  { animation-timing-function: steps(1); }
     }
   </style>
@@ -184,8 +188,9 @@
       <g class="card"><text class="stat" x="14278.3" y="35.0" font-size="14.00">REGULAR   17GP   1-4-5   -18   4PIM   34HIT</text><text class="stat" x="14278.3" y="55.0" font-size="14.00">PLAYOFFS   4GP   0-0-0   -9   4PIM   10HIT</text></g>
       <g class="card"><text class="stat" x="14941.8" y="35.0" font-size="14.00">REGULAR   264GP   63-143-206   +123   154PIM   676HIT</text><text class="stat" x="14941.8" y="55.0" font-size="14.00">PLAYOFFS   55GP   9-36-45   +20   26PIM   125HIT</text></g>
       <g class="card"><text class="stat" x="15605.3" y="35.0" font-size="14.00">REGULAR   281GP   64-147-211   +105   158PIM   710HIT</text><text class="stat" x="15605.3" y="55.0" font-size="14.00">PLAYOFFS   59GP   9-36-45   +11   30PIM   135HIT</text></g>
-      <g class="card"><text class="stat" x="16268.9" y="35.0" font-size="14.00">WJC   5 SELECTIONS   CZE RHI WOR</text></g>
-      <g class="card"><text class="muted" x="16932.4" y="35.0" font-size="14.00">NOMINATED · QUILHA AGANTE</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="35.0" font-size="14.00">REGULAR   17GP   5-5-10   -10   8PIM   22HIT</text><text class="muted" x="16268.9" y="55.0" font-size="14.00">NO PLAYOFF GAMES</text></g>
+      <g class="card"><text class="stat" x="16932.4" y="35.0" font-size="14.00">IIHF   2 SELECTIONS   FRA</text><text class="stat" x="16932.4" y="55.0" font-size="14.00">WJC   5 SELECTIONS   CZE RHI WOR</text></g>
+      <g class="card"><text class="muted" x="17596.0" y="35.0" font-size="14.00">NOMINATED · QUILHA AGANTE</text></g>
     </g>
     <clipPath id="clipB"><rect x="0" y="30.00" width="620" height="30.00"/></clipPath>
     <g id="stripB">
@@ -213,8 +218,9 @@
       <g class="card"><text class="stat" x="14278.3" y="52.5" font-size="21.00">17GP  1-4-5  -18  ·  PO 4GP 0P</text></g>
       <g class="card"><text class="stat" x="14941.8" y="52.5" font-size="21.00">264GP  63-143-206  +123  ·  PO 55GP 45P</text></g>
       <g class="card"><text class="stat" x="15605.3" y="52.5" font-size="21.00">281GP  64-147-211  +105  ·  PO 59GP 45P</text></g>
-      <g class="card"><text class="stat" x="16268.9" y="52.5" font-size="21.00">WJC 5</text></g>
-      <g class="card"><text class="stat" x="16932.4" y="52.5" font-size="21.00">QUILHA AGANTE (NOM)</text></g>
+      <g class="card"><text class="stat" x="16268.9" y="52.5" font-size="21.00">17GP  5-5-10  -10</text></g>
+      <g class="card"><text class="stat" x="16932.4" y="52.5" font-size="21.00">IIHF 2   ·   WJC 5</text></g>
+      <g class="card"><text class="stat" x="17596.0" y="52.5" font-size="21.00">QUILHA AGANTE (NOM)</text></g>
     </g>
   </defs>
 
@@ -224,7 +230,7 @@
     <g clip-path="url(#clipA)">
       <g class="strip">
         <use xlink:href="#stripA" href="#stripA" x="0"/>
-        <use xlink:href="#stripA" href="#stripA" x="17252.2"/>
+        <use xlink:href="#stripA" href="#stripA" x="17915.8"/>
       </g>
     </g>
     <rect class="band" x="0" y="0" width="620" height="20.00"/>
@@ -254,15 +260,16 @@
       <g class="p22"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · <tspan fill="#fbbc19">THUNDER BAY WALLEYE</tspan> · S85</text></g>
       <g class="p23"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · <tspan fill="#c2ad6e">NEVADA BATTLEBORN</tspan> · S86-S89</text></g>
       <g class="p24"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · SMJHL CAREER</text></g>
-      <g class="p25"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · INTERNATIONAL</text></g>
-      <g class="p26"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · S88 SMJHL</text></g>
+      <g class="p25"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · RD · <tspan fill="#f499c2">TAMPA BAY BARRACUDA</tspan> · S90</text></g>
+      <g class="p26"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · INTERNATIONAL</text></g>
+      <g class="p27"><text class="plate" x="12.0" y="14.4" font-size="14.00">SCONNIE MCHITS JR. · S88 SMJHL</text></g>
     </g>
   </g>
   <g class="tierB">
     <g clip-path="url(#clipB)">
       <g class="strip">
         <use xlink:href="#stripB" href="#stripB" x="0"/>
-        <use xlink:href="#stripB" href="#stripB" x="17252.2"/>
+        <use xlink:href="#stripB" href="#stripB" x="17915.8"/>
       </g>
     </g>
     <rect class="band" x="0" y="0" width="620" height="30.00"/>
@@ -292,8 +299,9 @@
       <g class="p22"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · <tspan fill="#fbbc19">TBW</tspan></text></g>
       <g class="p23"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · <tspan fill="#c2ad6e">NBB</tspan></text></g>
       <g class="p24"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · SMJHL CAREER</text></g>
-      <g class="p25"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · INTL</text></g>
-      <g class="p26"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · S88</text></g>
+      <g class="p25"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · <tspan fill="#f499c2">TBB</tspan></text></g>
+      <g class="p26"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · INTL</text></g>
+      <g class="p27"><text class="plate" x="12.0" y="21.6" font-size="21.00">SCONNIE MCHITS JR. · S88</text></g>
     </g>
   </g>
 </svg>

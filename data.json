@@ -347,6 +347,52 @@
     {
       "isGoalie": false,
       "leagues": {
+        "SHL": {
+          "indexID": 6211,
+          "lastSeason": 90,
+          "position": "RD",
+          "regular": {
+            "assists": 5,
+            "gamesPlayed": 17,
+            "giveaways": 8,
+            "goals": 5,
+            "hits": 22,
+            "pim": 8,
+            "plusMinus": -10,
+            "points": 10,
+            "ppPoints": 1,
+            "shPoints": 0,
+            "shotsBlocked": 30,
+            "shotsOnGoal": 26,
+            "takeaways": 10,
+            "timeOnIce": 20395
+          },
+          "stints": [
+            {
+              "regular": {
+                "assists": 5,
+                "gamesPlayed": 17,
+                "giveaways": 8,
+                "goals": 5,
+                "hits": 22,
+                "pim": 8,
+                "plusMinus": -10,
+                "points": 10,
+                "ppPoints": 1,
+                "shPoints": 0,
+                "shotsBlocked": 30,
+                "shotsOnGoal": 26,
+                "takeaways": 10,
+                "timeOnIce": 20395
+              },
+              "seasons": [
+                90
+              ],
+              "team": "TBB",
+              "teamID": 6
+            }
+          ]
+        },
         "SMJHL": {
           "indexID": 4226,
           "lastSeason": 89,
@@ -473,6 +519,17 @@
       "position": "Right Defense",
       "status": "active",
       "tournaments": {
+        "IIHF": {
+          "indexID": 1652,
+          "nations": [
+            "FRA"
+          ],
+          "seasons": [
+            88,
+            89
+          ],
+          "selections": 2
+        },
         "WJC": {
           "indexID": 3145,
           "nations": [
@@ -493,6 +550,12 @@
     }
   ],
   "teams": {
+    "0:6": {
+      "abbreviation": "TBB",
+      "name": "Tampa Bay Barracuda",
+      "primary": "#0ad2d2",
+      "secondary": "#f499c2"
+    },
     "1:14": {
       "abbreviation": "NBB",
       "name": "Nevada Battleborn",
