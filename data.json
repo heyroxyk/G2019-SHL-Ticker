@@ -353,37 +353,37 @@
           "position": "RD",
           "regular": {
             "assists": 9,
-            "gamesPlayed": 30,
+            "gamesPlayed": 33,
             "giveaways": 10,
             "goals": 5,
-            "hits": 45,
+            "hits": 52,
             "pim": 16,
-            "plusMinus": -19,
+            "plusMinus": -21,
             "points": 14,
             "ppPoints": 2,
             "shPoints": 0,
-            "shotsBlocked": 46,
-            "shotsOnGoal": 39,
-            "takeaways": 17,
-            "timeOnIce": 35805
+            "shotsBlocked": 53,
+            "shotsOnGoal": 44,
+            "takeaways": 20,
+            "timeOnIce": 39316
           },
           "stints": [
             {
               "regular": {
                 "assists": 9,
-                "gamesPlayed": 30,
+                "gamesPlayed": 33,
                 "giveaways": 10,
                 "goals": 5,
-                "hits": 45,
+                "hits": 52,
                 "pim": 16,
-                "plusMinus": -19,
+                "plusMinus": -21,
                 "points": 14,
                 "ppPoints": 2,
                 "shPoints": 0,
-                "shotsBlocked": 46,
-                "shotsOnGoal": 39,
-                "takeaways": 17,
-                "timeOnIce": 35805
+                "shotsBlocked": 53,
+                "shotsOnGoal": 44,
+                "takeaways": 20,
+                "timeOnIce": 39316
               },
               "seasons": [
                 90
