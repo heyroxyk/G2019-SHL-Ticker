@@ -350,6 +350,22 @@
         "SHL": {
           "indexID": 6211,
           "lastSeason": 90,
+          "playoffs": {
+            "assists": 0,
+            "gamesPlayed": 2,
+            "giveaways": 0,
+            "goals": 0,
+            "hits": 3,
+            "pim": 0,
+            "plusMinus": -5,
+            "points": 0,
+            "ppPoints": 0,
+            "shPoints": 0,
+            "shotsBlocked": 4,
+            "shotsOnGoal": 2,
+            "takeaways": 1,
+            "timeOnIce": 2568
+          },
           "position": "RD",
           "regular": {
             "assists": 19,
@@ -369,6 +385,22 @@
           },
           "stints": [
             {
+              "playoffs": {
+                "assists": 0,
+                "gamesPlayed": 2,
+                "giveaways": 0,
+                "goals": 0,
+                "hits": 3,
+                "pim": 0,
+                "plusMinus": -5,
+                "points": 0,
+                "ppPoints": 0,
+                "shPoints": 0,
+                "shotsBlocked": 4,
+                "shotsOnGoal": 2,
+                "takeaways": 1,
+                "timeOnIce": 2568
+              },
               "regular": {
                 "assists": 19,
                 "gamesPlayed": 66,
