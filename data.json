@@ -351,20 +351,20 @@
           "indexID": 6211,
           "lastSeason": 90,
           "playoffs": {
-            "assists": 0,
-            "gamesPlayed": 2,
+            "assists": 3,
+            "gamesPlayed": 4,
             "giveaways": 0,
-            "goals": 0,
-            "hits": 3,
+            "goals": 1,
+            "hits": 8,
             "pim": 0,
-            "plusMinus": -5,
-            "points": 0,
+            "plusMinus": -2,
+            "points": 4,
             "ppPoints": 0,
             "shPoints": 0,
-            "shotsBlocked": 4,
-            "shotsOnGoal": 2,
-            "takeaways": 1,
-            "timeOnIce": 2568
+            "shotsBlocked": 9,
+            "shotsOnGoal": 5,
+            "takeaways": 2,
+            "timeOnIce": 5694
           },
           "position": "RD",
           "regular": {
@@ -386,20 +386,20 @@
           "stints": [
             {
               "playoffs": {
-                "assists": 0,
-                "gamesPlayed": 2,
+                "assists": 3,
+                "gamesPlayed": 4,
                 "giveaways": 0,
-                "goals": 0,
-                "hits": 3,
+                "goals": 1,
+                "hits": 8,
                 "pim": 0,
-                "plusMinus": -5,
-                "points": 0,
+                "plusMinus": -2,
+                "points": 4,
                 "ppPoints": 0,
                 "shPoints": 0,
-                "shotsBlocked": 4,
-                "shotsOnGoal": 2,
-                "takeaways": 1,
-                "timeOnIce": 2568
+                "shotsBlocked": 9,
+                "shotsOnGoal": 5,
+                "takeaways": 2,
+                "timeOnIce": 5694
               },
               "regular": {
                 "assists": 19,
