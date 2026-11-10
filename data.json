@@ -1,6 +1,20 @@
 {
   "awards": [
     {
+      "achievement": "50",
+      "achievementDescription": "Gold Medal",
+      "achievementName": "Gold",
+      "fhmID": 3145,
+      "isAward": false,
+      "leagueID": 3,
+      "playerName": "Sconnie McHits Jr.",
+      "playerUpdateID": 2378,
+      "seasonID": 89,
+      "teamID": 9,
+      "userID": 5745,
+      "won": true
+    },
+    {
       "achievement": "35",
       "achievementDescription": "SMJHL Award For Best Defenseman",
       "achievementName": "Quilha Agante",
