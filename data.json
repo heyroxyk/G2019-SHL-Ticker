@@ -363,7 +363,7 @@
       "leagues": {
         "SHL": {
           "indexID": 6211,
-          "lastSeason": 90,
+          "lastSeason": 91,
           "playoffs": {
             "assists": 4,
             "gamesPlayed": 5,
@@ -380,22 +380,22 @@
             "takeaways": 2,
             "timeOnIce": 7007
           },
-          "position": "RD",
+          "position": "LD",
           "regular": {
             "assists": 19,
-            "gamesPlayed": 66,
-            "giveaways": 18,
+            "gamesPlayed": 69,
+            "giveaways": 19,
             "goals": 6,
-            "hits": 109,
-            "pim": 32,
-            "plusMinus": -40,
+            "hits": 113,
+            "pim": 36,
+            "plusMinus": -43,
             "points": 25,
             "ppPoints": 3,
             "shPoints": 0,
-            "shotsBlocked": 108,
-            "shotsOnGoal": 89,
-            "takeaways": 33,
-            "timeOnIce": 80608
+            "shotsBlocked": 109,
+            "shotsOnGoal": 93,
+            "takeaways": 34,
+            "timeOnIce": 84276
           },
           "stints": [
             {
@@ -417,22 +417,23 @@
               },
               "regular": {
                 "assists": 19,
-                "gamesPlayed": 66,
-                "giveaways": 18,
+                "gamesPlayed": 69,
+                "giveaways": 19,
                 "goals": 6,
-                "hits": 109,
-                "pim": 32,
-                "plusMinus": -40,
+                "hits": 113,
+                "pim": 36,
+                "plusMinus": -43,
                 "points": 25,
                 "ppPoints": 3,
                 "shPoints": 0,
-                "shotsBlocked": 108,
-                "shotsOnGoal": 89,
-                "takeaways": 33,
-                "timeOnIce": 80608
+                "shotsBlocked": 109,
+                "shotsOnGoal": 93,
+                "takeaways": 34,
+                "timeOnIce": 84276
               },
               "seasons": [
-                90
+                90,
+                91
               ],
               "team": "TBB",
               "teamID": 6
